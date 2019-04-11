@@ -14,6 +14,7 @@ class TestLab1(unittest.TestCase):
         self.assertEqual(max_list_iter([0, 9, 0]), 9)
         self.assertEqual(max_list_iter([1, 4, 4]), 4)
         self.assertEqual(max_list_iter([9, 9, 9]), 9)
+        self.assertEqual(max_list_iter([]), None)
 
 
     def test_reverse_rec(self):
@@ -27,7 +28,7 @@ class TestLab1(unittest.TestCase):
         self.assertEqual(reverse_rec([2,0,2]),[2,0,2])
         self.assertEqual(reverse_rec([0]),[0])
         self.assertEqual(reverse_rec([]),[])
-
+        
 
     def test_bin_search(self):
         tlist = None
