@@ -20,10 +20,12 @@ class TestLab1(unittest.TestCase):
         loc2 = Location("Paris", 48.9, 2.4)
         loc3 = Location("SLO", 35.3, -120.7)
         loc4 = loc1
+        loc5 = Location("LA", 35.3, -120.7)
         self.assertEqual(Location.__eq__(loc1, loc3), True)
         self.assertEqual(Location.__eq__(loc1, loc4), True)
         self.assertEqual(Location.__eq__(loc1, loc2), False)
         self.assertEqual(Location.__eq__(loc4, loc2), False)
+        self.assertEqual(Location.__eq__(loc1, loc5), False)
 
 if __name__ == "__main__":
         unittest.main()
